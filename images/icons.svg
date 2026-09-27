@@ -37,6 +37,13 @@
     <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
   </symbol>
 
+  <!-- navigation -->
+  <symbol id="icon-menu" viewBox="0 0 24 16">
+    <rect x="0" y="0" width="24" height="2" rx="1" />
+    <rect x="0" y="7" width="24" height="2" rx="1" />
+    <rect x="0" y="14" width="24" height="2" rx="1" />
+  </symbol>
+
   <!-- forms and modal -->
   <symbol id="icon-close" viewBox="0 0 8 8">
     <path d="M8 0.8 7.2 0 4 3.2 0.8 0 0 0.8 3.2 4 0 7.2 0.8 8 4 4.8 7.2 8 8 7.2 4.8 4z" />

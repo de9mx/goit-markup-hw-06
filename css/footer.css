@@ -1,16 +1,18 @@
 .footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: var(--navy-blue);
 }
 
 .footer-container {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 
 .footer-left {
-  margin-right: 120px;
+  text-align: center;
 }
 
 .footer-logo {
@@ -30,12 +32,18 @@
 
 .footer-text {
   max-width: 264px;
+  margin: 0 auto;
   font-size: 16px;
   line-height: 1.5;
   color: var(--cornflower);
 }
 
-.footer-social-text {
+.footer-right {
+  text-align: center;
+}
+
+.footer-social-text,
+.footer-subscribe-title {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -46,6 +54,7 @@
 
 .footer-social-list {
   display: flex;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -70,27 +79,26 @@
   fill: var(--grey);
 }
 
-/* ---------- форма подписки ---------- */
 .footer-subscribe {
-  margin-left: auto;
+  width: 100%;
 }
 
-.footer-subscribe-title {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--white);
+.subscribe-form {
+  display: flex;
+  justify-content: center;
 }
 
 .subscribe-controls {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 396px;
 }
 
 .subscribe-input {
-  width: 264px;
+  width: 100%;
   height: 40px;
   padding: 8px 16px;
   border: 1px solid var(--white);
@@ -140,4 +148,74 @@
 
 .subscribe-icon {
   fill: currentColor;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 24px;
+    padding-left: 108px;
+  }
+
+  .footer-left,
+  .footer-right,
+  .footer-subscribe {
+    text-align: left;
+  }
+
+  .footer-text {
+    margin: 0;
+  }
+
+  .footer-social-list,
+  .subscribe-controls {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .subscribe-form {
+    justify-content: flex-start;
+  }
+
+  .footer-subscribe {
+    width: auto;
+  }
+}
+
+@media (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+
+  .footer-left {
+    margin-right: 120px;
+  }
+
+  .footer-right {
+    margin-right: 80px;
+  }
+
+  .footer-subscribe {
+    margin-left: auto;
+  }
+
+  .subscribe-controls {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    max-width: none;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
 }

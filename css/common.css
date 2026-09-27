@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -24,7 +25,9 @@ html {
 }
 
 body {
+  min-width: 320px;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
   color: var(--slate);
   background-color: var(--white);
 }
@@ -65,18 +68,31 @@ address {
   font-style: normal;
 }
 
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+.no-scroll {
+  overflow: hidden;
 }
 
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 .section-title {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;

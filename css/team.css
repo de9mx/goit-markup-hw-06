@@ -1,20 +1,18 @@
 .team {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: var(--grey);
-}
-
-.team .section-title {
-  margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 72px 24px;
 }
 
 .team-item {
-  width: calc((100% - 3 * 24px) / 4);
+  width: 264px;
   background-color: var(--white);
   border-radius: 0 0 4px 4px;
   box-shadow:
@@ -68,4 +66,16 @@
 
 .social-icon {
   fill: currentColor;
+}
+
+@media (min-width: 1158px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
 }
