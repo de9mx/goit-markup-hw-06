@@ -156,6 +156,8 @@
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 72px 24px;
+    padding-left: 108px;
+    padding-right: 108px;
   }
 
   .footer-left,
@@ -206,6 +208,8 @@
   .footer-container {
     flex-wrap: nowrap;
     align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .footer-left {

@@ -135,6 +135,10 @@
 }
 
 @media (min-width: 1158px) {
+  .logo {
+    margin-right: 76px;
+  }
+
   .contacts-list {
     flex-direction: row;
     gap: 40px;
