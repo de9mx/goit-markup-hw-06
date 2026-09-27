@@ -6,9 +6,9 @@
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 72px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 
 .team-item {
@@ -66,6 +66,15 @@
 
 .social-icon {
   fill: currentColor;
+}
+
+@media (min-width: 768px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
 }
 
 @media (min-width: 1158px) {

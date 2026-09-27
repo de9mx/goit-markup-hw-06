@@ -80,6 +80,10 @@
   .portfolio-item {
     width: calc((100% - 24px) / 2);
   }
+
+  .portfolio-list {
+    gap: 72px 24px;
+  }
 }
 
 @media (min-width: 1158px) {
@@ -90,5 +94,9 @@
 
   .portfolio-item {
     width: calc((100% - 2 * 24px) / 3);
+  }
+
+  .portfolio-list {
+    gap: 48px 24px;
   }
 }

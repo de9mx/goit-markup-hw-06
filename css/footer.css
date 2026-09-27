@@ -12,12 +12,14 @@
 }
 
 .footer-left {
-  text-align: center;
+  width: 264px;
+  text-align: left;
 }
 
 .footer-logo {
-  display: inline-block;
-  margin-bottom: 16px;
+  display: block;
+  width: max-content;
+  margin: 0 auto 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -31,7 +33,6 @@
 }
 
 .footer-text {
-  max-width: 264px;
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.5;
@@ -94,7 +95,6 @@
   align-items: center;
   gap: 16px;
   width: 100%;
-  max-width: 396px;
 }
 
 .subscribe-input {
@@ -155,8 +155,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    column-gap: 24px;
-    padding-left: 108px;
+    gap: 72px 24px;
   }
 
   .footer-left,
@@ -165,18 +164,32 @@
     text-align: left;
   }
 
+  .footer-logo {
+    margin: 0 0 16px;
+  }
+
   .footer-text {
     margin: 0;
   }
 
-  .footer-social-list,
-  .subscribe-controls {
+  .footer-social-list {
     justify-content: flex-start;
-    align-items: flex-start;
   }
 
   .subscribe-form {
     justify-content: flex-start;
+  }
+
+  .subscribe-controls {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    width: auto;
+  }
+
+  .subscribe-input {
+    width: 264px;
   }
 
   .footer-subscribe {
@@ -193,7 +206,6 @@
   .footer-container {
     flex-wrap: nowrap;
     align-items: flex-start;
-    padding-left: 0;
   }
 
   .footer-left {
@@ -206,16 +218,5 @@
 
   .footer-subscribe {
     margin-left: auto;
-  }
-
-  .subscribe-controls {
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
-    max-width: none;
-  }
-
-  .subscribe-input {
-    width: 264px;
   }
 }

@@ -55,7 +55,7 @@
   .logo {
     padding-top: 24px;
     padding-bottom: 24px;
-    margin-right: 76px;
+    margin-right: 120px;
   }
 
   .mobile-menu-toggle {
@@ -117,12 +117,13 @@
   .contacts-list {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 12px;
     font-size: 12px;
     line-height: 1.17;
   }
 
   .contacts-link {
+    letter-spacing: 0.04em;
     color: var(--slate);
     transition: color var(--transition-dur-and-func);
   }
@@ -139,5 +140,9 @@
     gap: 40px;
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  .contacts-link {
+    letter-spacing: 0.02em;
   }
 }
